@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Survey Form</h1>
+</head>
+<body>
+  <p class="description" id="description">This is a survey form. Please complete.</p> 
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for "name">Name: </label>
+          <input 
+          required 
+          id="name" 
+          name="name" 
+          type="text" 
+          placeholder="Enter your name"
+          >
+      </div>
+      <div>
+        <label id="email-label" for "email">Email: </label>
+          <input 
+          required 
+          id="email" 
+          name="email" 
+          type="email" 
+          placeholder="Enter your email"
+          >
+      </div>
+      <div>
+        <label id="number-label" for "number">Number: </label>
+          <input 
+          id="number" 
+          type="number" 
+          min="10" 
+          max="99" 
+          placeholder="(optional)"
+          >
+      </div>
+      <div>
+        <p>Which of these options would you like to select?</p?
+        <input type="dropdown" id="dropdown" name="option">
+          <select id="dropdown" name="option"> 
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div>
+        <p>Would you choose up or down?</p>
+          <label>
+              <input
+                name="choose"
+                value="up"
+                type="radio"
+                id="down"
+                >
+                Up
+          </label>
+          <label>
+              <input
+                name="choose"
+                value="down"
+                type="radio"
+                id="down"
+                >
+                Down
+          </label>
+      </div>
+      <div>
+        <p>Select as many as you would like: </p>
+        <label>
+            <input
+              type="checkbox"
+              value="cheese"
+              name="cheese"
+              id="cheese"
+            >Cheese
+        </label>
+        <label>
+            <input
+              type="checkbox"
+              value="lettuce"
+              name="lettuce"
+              id="lettuce"
+            >Lettuce
+          </label>
+          <label>
+              <input
+              type="checkbox"
+              value="tomato"
+              name="tomato"
+              id="tomato"
+            >Tomato
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="pickle"
+              name="pickle"
+              id="pickle"
+            >Pickle
+          </label>
+      </div>
+      <div>
+        <p>Additional Comments?</p>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="enter comments here...">
+            </textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+</body>
+</html>
+CSS
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center; 
+}
+
+.description {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+div{
+  padding: .25rem
+
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-size: auto;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+form {
+  background: blue;
+  padding: 2.5rem 1.5rem;
+  border-radius: 0.25rem;
+  color: white 
+}
